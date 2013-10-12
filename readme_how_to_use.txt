@@ -11,6 +11,8 @@ couchbase, libcouchbase.
 2) Rename the memcached file in /opt/couchbase/bin/ to memcached.bin and put the
 changed memcached file of this package in its old place. This will allow cb
 to scale further by running memcached with more threads (wrapper script).
+You will also have to make it executable: chmod +x /opt/couchbase/bin/memcached
+
 
 3) Put the couchtest.c handler into gwan's directory. Navigate down the whole
 folder structure until you see the example handlers provided in the csp folder
