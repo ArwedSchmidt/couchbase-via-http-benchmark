@@ -1,0 +1,3 @@
+#! /bin/bash
+echo "Changed memcached threading argument"
+exec ${0}.bin -t 8 "$@"
