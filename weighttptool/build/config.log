@@ -1,0 +1,132 @@
+# project weighttp (0.3) configured on Sat Aug  3 12:57:04 2013 by
+# waf 1.5.9 (abi 7, python 20703f0 on linux2)
+# using ./waf configure
+#
+Checking for program gcc,cc
+
+find program=['gcc', 'cc'] paths=[] var='CC' -> '/usr/bin/gcc'
+
+Checking for program cpp
+
+find program=['cpp'] paths=[] var='CPP' -> '/usr/bin/cpp'
+
+Checking for program ar
+
+find program=['ar'] paths=[] var='AR' -> '/usr/bin/ar'
+
+Checking for program ranlib
+
+find program=['ranlib'] paths=[] var='RANLIB' -> '/usr/bin/ranlib'
+
+Checking for gcc 
+
+Checking for library ev
+
+==>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog', '-Wl,-Bdynamic', '-lev']
+Checking for header ev.h
+
+==>
+#include <ev.h>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog', '-Wl,-Bdynamic', '-lev']
+Checking for library pthread
+
+==>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog', '-Wl,-Bdynamic', '-lpthread']
+Checking for header pthread.h
+
+==>
+#include <pthread.h>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog', '-Wl,-Bdynamic', '-lpthread']
+Checking for header unistd.h
+
+==>
+#include <unistd.h>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog']
+Checking for header stdint.h
+
+==>
+#include <stdint.h>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog']
+Checking for header fcntl.h
+
+==>
+#include <fcntl.h>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog']
+Checking for header inttypes.h
+
+==>
+#include <inttypes.h>
+
+int main() {
+	return 0;
+}
+
+<==
+[1/2] [32mcc: build/.conf_check_0/test.c -> build/.conf_check_0/testbuild/default/test_1.o
+[0m['/usr/bin/gcc', '-std=gnu99', '-Wall', '-Wshadow', '-W', '-pedantic', '-g', '-g2', '-O2', '-Wmissing-declarations', '-Wdeclaration-after-statement', '-Wno-pointer-sign', '-Wcast-align', '-Winline', '-Wsign-compare', '-Wnested-externs', '-Wpointer-arith', '-Wbad-function-cast', '-Wmissing-prototypes', '-fPIC', '-fno-strict-aliasing', '../test.c', '-c', '-o', 'default/test_1.o']
+[2/2] [33mcc_link: build/.conf_check_0/testbuild/default/test_1.o -> build/.conf_check_0/testbuild/default/testprog
+[0m['/usr/bin/gcc', 'default/test_1.o', '-o', '/root/weighhttp/weighttp/build/.conf_check_0/testbuild/default/testprog']
